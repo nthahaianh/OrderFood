@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dp5"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_comment_list_cardView"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginHorizontal="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        app:cardCornerRadius="@dimen/dp50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/item_comment_list_ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/item_comment_list_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/item_comment_list_cardView"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/item_comment_list_tvName"
+            style="@style/TextStyleItemCommentName"
+            android:layout_marginVertical="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/item_comment_list_ratingBar"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressBackgroundTint="@color/grey_dark"
+            android:rating="4.5"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/item_comment_list_tvContent"
+            style="@style/TextStyleItemComment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_comment_list_tvTime"
+            style="@style/TextStyleItemCommentTime"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="@dimen/dp10"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_comment_list_ll" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp20"
+    android:background="@drawable/background_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_address_tvTitle"
+        style="@style/TextStyleTitleDialog"
+        android:background="@drawable/background_title_dialog"
+        android:paddingVertical="@dimen/dp10"
+        android:text="Add address" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_margin="@dimen/dp5"
+            android:src="@drawable/ic_phone_call"
+            android:tint="@color/grey" />
+
+        <EditText
+            android:id="@+id/dialog_address_etPhone"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_edit_text"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:paddingHorizontal="@dimen/dp5"
+            android:paddingVertical="@dimen/dp7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_margin="@dimen/dp5"
+            android:src="@drawable/ic_location"
+            android:tint="@color/grey" />
+
+        <EditText
+            android:id="@+id/dialog_address_etAddress"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_edit_text"
+            android:paddingHorizontal="@dimen/dp5"
+            android:paddingVertical="@dimen/dp7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_address_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:layout_weight="1"
+            android:text="@string/dialog_cancel" />
+
+        <Button
+            android:id="@+id/dialog_address_btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:layout_weight="1"
+            android:text="@string/dialog_ok" />
+    </LinearLayout>
+</LinearLayout>

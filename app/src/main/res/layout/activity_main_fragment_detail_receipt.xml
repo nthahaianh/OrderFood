@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fragment_detail_receipt_ivBack"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp15"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black" />
+
+        <TextView
+            style="@style/TextStyleMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:text="@string/check_receipt_receipt" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleOrder"
+                    android:src="@drawable/ic_ship" />
+
+                <TextView
+                    style="@style/TextStyleItemOrder"
+                    android:layout_weight="1"
+                    android:text="@string/information_delivery" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_detail_receipt_llPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp13">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_margin="@dimen/dp5"
+                    android:src="@drawable/ic_phone_call"
+                    android:tint="@color/grey" />
+
+                <TextView
+                    android:id="@+id/fragment_detail_receipt_tvPhone"
+                    style="@style/TextStyleAddressItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/dp15"
+                    android:paddingVertical="@dimen/dp17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp13">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_margin="@dimen/dp5"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/grey" />
+
+                <TextView
+                    android:id="@+id/fragment_detail_receipt_tvAddress"
+                    style="@style/TextStyleAddressItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/dp15"
+                    android:paddingVertical="@dimen/dp17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleOrder"
+                    android:src="@drawable/ic_dollar" />
+
+                <TextView
+                    style="@style/TextStyleItemOrder"
+                    android:layout_weight="1"
+                    android:text="@string/information_payment_method" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp13">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_margin="@dimen/dp5"
+                    android:src="@drawable/ic_credit_card"
+                    android:tint="@color/grey" />
+
+                <TextView
+                    android:id="@+id/fragment_detail_receipt_tvPayment"
+                    style="@style/TextStyleItemOrderChild"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/dp15"
+                    android:paddingVertical="@dimen/dp17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleOrder"
+                    android:src="@drawable/ic_list" />
+
+                <TextView
+                    style="@style/TextStyleItemOrder"
+                    android:layout_weight="1"
+                    android:text="@string/information_selected_foods" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_detail_sign_in_to_rate"
+                style="@style/TextStyleItemOrderChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/detail_receipt_sign_in_to_rate" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_detail_receipt_rvFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/fragment_detail_receipt_llMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleOrder"
+                    android:src="@drawable/ic_comment_alt" />
+
+                <TextView
+                    style="@style/TextStyleItemOrder"
+                    android:layout_weight="1"
+                    android:text="@string/information_message" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_detail_receipt_tvMessage"
+                style="@style/TextStyleItemOrderChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp50"
+                android:paddingHorizontal="@dimen/dp15"
+                android:paddingVertical="@dimen/dp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp15"
+                android:paddingVertical="@dimen/dp16">
+
+                <TextView
+                    style="@style/TextStyleItemOrderChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_time_order" />
+
+                <TextView
+                    android:id="@+id/fragment_detail_receipt_tvTime"
+                    style="@style/TextStyleItemOrderChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="@dimen/dp16">
+
+                <TextView
+                    style="@style/TextStyleOrderTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/order_total_amount" />
+
+                <TextView
+                    android:id="@+id/fragment_detail_receipt_tvTotal"
+                    style="@style/TextStyleOrderTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_index_default" />
+
+                <TextView
+                    style="@style/TextStyleOrderTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/dp5"
+                    android:text="@string/order_vnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

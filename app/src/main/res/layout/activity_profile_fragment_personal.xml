@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fragment_personal_ivImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginVertical="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_nonla1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvFullName"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_weight="1"
+                    android:text="@string/update_profile" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvUpdateName"
+                    style="@style/TextStyleUpdateProfile"
+                    android:layout_marginVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_update" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_envelope" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvEmail"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_weight="1"
+                    android:text="@string/update_profile_email" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvUpdateEmail"
+                    style="@style/TextStyleUpdateProfile"
+                    android:layout_marginVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_update" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_lock" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvPassword"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_weight="1"
+                    android:text="@string/update_profile_password" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvChangePassword"
+                    style="@style/TextStyleUpdateProfile"
+                    android:layout_marginVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_update" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvAddress"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_weight="1"
+                    android:text="@string/personal_address" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvUpdateAddress"
+                    style="@style/TextStyleUpdateProfile"
+                    android:layout_marginVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_update" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_credit_card" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvCard"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_weight="1"
+                    android:text="@string/personal_card" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvUpdateCard"
+                    style="@style/TextStyleUpdateProfile"
+                    android:layout_marginVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_update" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_comment_alt" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvComment"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_weight="1"
+                    android:text="@string/personal_comment" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvUpdateComment"
+                    style="@style/TextStyleUpdateProfile"
+                    android:layout_marginVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/ImageViewStyleIconProfile"
+                    android:src="@drawable/ic_sign_out" />
+
+                <TextView
+                    android:id="@+id/fragment_personal_tvSignOut"
+                    style="@style/TextStylePersonalItem"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp"
+                    android:text="@string/personal_sign_out" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

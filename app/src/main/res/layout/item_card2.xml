@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp1"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingVertical="@dimen/dp5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_card2_tvNameBank"
+        style="@style/TextStyleItemCard2"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="name bank" />
+
+    <TextView
+        android:id="@+id/item_card2_tvNumberCard"
+        style="@style/TextStyleItemCard2"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginVertical="@dimen/dp5"
+        android:text="so the" />
+
+    <TextView
+        android:id="@+id/item_card2_tvNameUser"
+        style="@style/TextStyleItemCard2"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:text="full name" />
+</LinearLayout>

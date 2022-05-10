@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp25"
+    android:layout_marginBottom="@dimen/dp1">
+
+    <ImageView
+        android:id="@+id/item_foods_list_type1_ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/item_foods_list_type1_btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_foods_list_type1_add"
+            android:background="@drawable/background_button"
+            app:layout_constraintBottom_toBottomOf="@id/item_foods_list_type1_tvPrice"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_foods_list_type1_tvNameOfFood"
+            style="@style/TextStyleNameFoodItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp7"
+            android:paddingTop="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/item_foods_list_type1_btnAdd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_foods_list_type1_tvPrice"
+            style="@style/TextStylePriceItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/item_foods_list_type1_btnAdd"
+            app:layout_constraintTop_toBottomOf="@id/item_foods_list_type1_tvNameOfFood" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

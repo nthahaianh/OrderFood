@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbackground"
+    android:paddingTop="@dimen/dp90">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/background_menu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_dashboard_ivHome"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="@dimen/dp6"
+                    android:src="@drawable/ic_home"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/fragment_dashboard_tvHome"
+                    style="@style/TextStyleMenuDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_home" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/background_menu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_dashboard_ivFavorite"
+                    style="@style/ImageViewStyleMenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/ic_following" />
+
+                <TextView
+                    android:id="@+id/fragment_dashboard_tvFavorite"
+                    style="@style/TextStyleMenuDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_favorite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/background_menu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_dashboard_ivCart"
+                    style="@style/ImageViewStyleMenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/ic_cart" />
+
+                <TextView
+                    android:id="@+id/fragment_dashboard_tvCart"
+                    style="@style/TextStyleMenuDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_cart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/background_menu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_dashboard_ivReceipts"
+                    style="@style/ImageViewStyleMenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/ic_receipt" />
+
+                <TextView
+                    android:id="@+id/fragment_dashboard_tvReceipts"
+                    style="@style/TextStyleMenuDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_receipts" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

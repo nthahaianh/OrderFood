@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleNotification">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyle1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyle15">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyle17">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleOnBoarding">
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textSize">37sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/utm_bebas</item>
+    </style>
+    <style name="TextStyleOnBoarding3">
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textSize">44sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextStyleOnBoarding2">
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="TextStyleLogin">
+        <item name="android:textColor">@color/yellow_bar</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleMenuDashboard">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleMenu">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleDiscovery">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleDetailTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleDetailDescribe">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleDetailPrice">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleDetailContent">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="TextStyleDetailRate">
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleNameFoodItem2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStylePriceItem2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleNameFoodItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStylePriceItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleLoadMore">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:padding">@dimen/dp7</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleTypeFood">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStylePersonal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStylePersonalItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleUpdateProfile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleAddressItem">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleItemCardName">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleItemCardNumber">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp25</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleItemCard2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleTitleDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="TextStylePersonalChangePass">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleItemOrder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:layout_margin">@dimen/dp5</item>
+    </style>
+    <style name="TextStyleItemOrderChild">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleOrderTotal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleItemReceipt">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleItemReceiptPrice">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp25</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleItemFoodOrder">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleNameFoodOrder">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleItemFoodOrderRate">
+        <item name="android:textColor">@color/yellow_button</item>
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleReviewsRate">
+        <item name="android:textColor">@color/yellow_button</item>
+        <item name="android:textSize">@dimen/sp30</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleItemCommentName">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleItemComment">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleItemCommentTime">
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleLoginChange">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+    <style name="TextStyleLoginChange2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="TextStyleLoginError">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+    <style name="ImageViewStyleOrder">
+        <item name="android:layout_width">@dimen/dp30</item>
+        <item name="android:layout_height">@dimen/dp30</item>
+        <item name="android:tint">@color/grey</item>
+        <item name="android:padding">@dimen/dp5</item>
+    </style>
+    <style name="ImageViewStyleIconProfile">
+        <item name="android:layout_width">@dimen/dp50</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:padding">@dimen/dp13</item>
+    </style>
+    <style name="ImageViewStyleMenu">
+        <item name="android:tint">@color/black</item>
+    </style>
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:src">@drawable/background_line</item>
+    </style>
+
+</resources>

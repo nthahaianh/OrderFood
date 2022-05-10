@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_cart_llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fragment_cart_ivBack"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp15"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/fragment_cart_tvCart"
+            style="@style/TextStyleMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:text="@string/menu_cart" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_cart_tvNoFood"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dp10"
+        android:paddingVertical="@dimen/dp10"
+        android:text="@string/cart_no_food"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/fragment_cart_llTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_cart_rvFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_order_llTotal"
+        app:layout_constraintTop_toBottomOf="@id/fragment_cart_llTitle" />
+
+    <LinearLayout
+        android:id="@+id/fragment_order_llTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="6dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_cart_btnOrder">
+
+        <TextView
+            style="@style/TextStyle17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/order_total_amount" />
+
+        <TextView
+            android:id="@+id/fragment_cart_tvTotal"
+            style="@style/TextStyleOrderTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_0"
+            android:padding="5dp" />
+
+        <TextView
+            style="@style/TextStyleOrderTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dp5"
+            android:text="@string/order_vnd" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragment_cart_btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_order"
+        android:text="@string/order_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

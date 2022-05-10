@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_light"
+    tools:context=".OnBoardingActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_on_boarding2_guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_on_boarding2_guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_on_boarding2_guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_margin="@dimen/dp50"
+        android:padding="@dimen/dp20"
+        android:src="@drawable/menu2"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_on_boarding2_guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_on_boarding2_tvTitle"
+        style="@style/TextStyleOnBoarding3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30"
+        android:layout_marginVertical="@dimen/dp5"
+        android:text="DISCOVER YOUR"
+        app:layout_constraintTop_toTopOf="@id/fragment_on_boarding2_guideline2" />
+
+    <TextView
+        android:id="@+id/fragment_on_boarding2_tvAddress"
+        style="@style/TextStyleOnBoarding3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30"
+        android:layout_marginVertical="@dimen/dp5"
+        android:text="FAVORITE FOOD"
+        app:layout_constraintTop_toBottomOf="@id/fragment_on_boarding2_tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

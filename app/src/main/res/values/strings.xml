@@ -1,3 +1,143 @@
 <resources>
-    <string name="app_name">OrderFood</string>
+    <string name="app_name">Viet Food</string>
+
+    //Main function
+    <string name="menu_home">Home</string>
+    <string name="menu_personal">Personal</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_receipts">Receipts</string>
+    <string name="menu_cart">Cart</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // item in list
+    <string name="item_foods_list_type1_add">+ADD</string>
+    <string name="item_food_order_rate">Rate</string>
+    <string name="item_receipt_qr_code">QR code</string>
+
+    //Activity Sign in --- fragment sign in
+    <string name="sign_in_email">Email</string>
+    <string name="sign_in_password">Password</string>
+    <string name="sign_in_show_password">Show Password</string>
+    <string name="sign_in_sign_in">Sign in</string>
+    <string name="sign_in_faild">The account does not exist or the password is wrong</string>
+    <string name="sign_in_password_invalid">Password with 8 to 30 characters, at least 1 letter and 1 number</string>
+    <string name="sign_in_email_invalid">Email is invalid</string>
+    <string name="sign_in_create_account">Sign up</string>
+    //Activity Sign in --- fragment sign up
+    <string name="sign_up_login_account">Sign in</string>
+    <string name="sign_up_sign_up">Sign up</string>
+    <string name="sign_up_password_again">Confirm password</string>
+    <string name="sign_up_not_match">Confirmation password does not match</string>
+
+    //Activity Main --- fragment detail food
+    <string name="fragment_detail_food_describe">Describe</string>
+    <string name="fragment_detail_food_content_describe">Describe Des cribe De scribe Desc ribe Descr ibe Descri be Des cribe Desc ribe Descri be Describe Desc ribe Describe Desc ribe Des  cribeDescrib e Descr beDes cribe DescribeD scribe Descr ibeDe scribe DescribeDescribe DescribeDescribe Des cribeD esc ribe Des ibeDes cr ibe Descr ibeDescrib e Descri beDes cribe Describ eDesc ribe Descri beDescr ibe Desc ribeDe scribe Desc ribeDescribe  Descr ibeDescri be Desc ribeDes cribe DescribeDescribe DescribeDescribe DescribeDescribe DescribeDescribe DescribeDescribe Descr ibeDescribe Desc ribeDescribe Descri beD escri be Descri beDes cribe Descr ibeDescr ibe De scr ibeDesc ribe De scribeDes cribe Descr ibeD escribe D escribe</string>
+    <string name="fragment_detail_food_comments">Comments</string>
+    <string name="on_boarding_skip">Skip</string>
+
+    //Activity Main --- fragment reviews
+    <string name="reviews_comments">Comments</string>
+    <string name="reviews_comment">comments</string>
+
+    //Activity Main --- fragment home
+    <string name="home_load_more"><![CDATA[View all]]></string>
+    <string name="home_other_foods">Other Foods</string>
+    <string name="home_drinks">Drinks</string>
+    <string name="home_cakes">Cakes</string>
+    <string name="home__noodles">Noodles</string>
+    <string name="home_rice">Rice</string>
+    <string name="home_search">Search</string>
+    <string name="home_discover">Discover your favorite menu</string>
+
+    //Activity Main --- fragment add comment
+    <string name="add_comment">Add comment</string>
+    <string name="add_comment_comment">Comment</string>
+    <string name="add_comment_rate">Rate</string>
+
+    //Activity Profile --- fragment personal
+    <string name="personal_update">Update</string>
+    <string name="personal_my_address">My address</string>
+    <string name="personal_sign_out">Sign out</string>
+    <string name="personal_address">My address</string>
+    <string name="personal_card">My cards</string>
+    <string name="personal_comment">My comments</string>
+    <string name="personal_update_profile">Update profile</string>
+    <string name="personal_update_name">Update name</string>
+    <string name="personal_update_email">Update email</string>
+    <string name="personal_change_password">Change password</string>
+    <string name="personal_update_address">Update address</string>
+    <string name="personal_update_card">Update card</string>
+    <string name="personal_view">View</string>
+
+    //Activity Profile --- fragment update profile
+    <string name="profile_update">Update</string>
+    <string name="update_profile">Name</string>
+    <string name="update_profile_email">Email</string>
+    <string name="update_profile_fullname">Full name</string>
+    <string name="update_profile_password">Password</string>
+    //Activity Profile --- fragment change password
+    <string name="change_password_password_recent">Current password</string>
+    <string name="change_password_new_password">New password</string>
+    <string name="change_password_confirm_password">Confirm password</string>
+    //Activity Profile --- fragment update address
+    <string name="update_address_add_new_address">+Add new address</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+
+    //Activity Profile --- fragment update card
+    <string name="update_card_add_new_card">+Add new card</string>
+    <string name="update_card_add_card">Add new card</string>
+    <string name="update_card_full_name">Full name</string>
+    <string name="update_card_card_number">Card number</string>
+    <string name="update_card_bank">Bank</string>
+    <string name="update_card_submit">Add</string>
+
+    //Activity Profile --- fragment comment
+    <string name="comments_no_comments">Chua nhan xet mon an nao</string>
+
+    //Activity Order
+    <string name="order_confirm">Confirm</string>
+    <string name="order_information">Information</string>
+    <string name="order_total_amount">Total amount</string>
+    <string name="order_index_default">0</string>
+    <string name="order_vnd">VND</string>
+    <string name="order_order">order</string>
+
+    //Activity Order --- fragment cart
+    <string name="cart_no_food">No food in cart</string>
+    <string name="cart_0">0</string>
+
+    //Activity Order --- fragment information
+    <string name="information_delivery">Delivery</string>
+    <string name="information_at_restaurant">At restaurant</string>
+    <string name="information_shipping">Shipping</string>
+    <string name="information_enable_shipping">Sign in with email to enable shipping</string>
+    <string name="information_payment_method">Payment method</string>
+    <string name="information_direct_payment">Direct payment</string>
+    <string name="information_online_payment">Online payment</string>
+    <string name="information_enable_online_payment">Sign in with email to enable online payment</string>
+    <string name="information_selected_foods">Selected foods</string>
+    <string name="information_message">Message</string>
+    <string name="information_content_message">Content message</string>
+
+    //Activity Order --- fragment check receipt
+    <string name="check_receipt_receipt">Receipt</string>
+    <string name="check_confirm">Confirm</string>
+    <string name="check_time_order">Time order</string>
+    <string name="detail_receipt_sign_in_to_rate">Please sign in to rate foods</string>
+    <string name="reviews_no_comments">No comments yet</string>
+    <string name="dialog_success">Success</string>
+
+    //Activity Order --- fragment complete
+    <string name="complete_thanks">Thank you for your order</string>
+    <string name="complete_order_success">Order success</string>
+    <string name="food_list_no_food">There is no food</string>
+    <string name="dialog_qrcode">QRCODE</string>
+
+    // on boarding
+    <string name="on_boarding1_title">Vietnamese restaurant</string>
+    <string name="on_boarding_phone">0838443844</string>
+    <string name="on_boarding_address">No. 8A, Road 2, Phu Lo Commune, Soc Son District, Hanoi City</string>
+    <string name="on_boarding_address2">số 8A khu đường 2, xã phù lỗ, huyện sóc hơn, thành phố hà nội</string>
 </resources>

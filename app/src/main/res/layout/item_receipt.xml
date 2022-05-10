@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20">
+
+        <TextView
+            android:id="@+id/item_receipt_tvTotal"
+            style="@style/TextStyleItemReceiptPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200000" />
+
+        <TextView
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_vnd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_clock"
+            android:tint="@color/grey" />
+
+        <TextView
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/check_time_order" />
+
+        <TextView
+            android:id="@+id/item_receipt_tvTime"
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/5/2022  15h 26min" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_ship"
+            android:tint="@color/grey" />
+
+        <TextView
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/information_delivery" />
+
+        <TextView
+            android:id="@+id/item_receipt_tvDelivery"
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/5/2022  15h 26min" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_credit_card"
+            android:tint="@color/grey" />
+
+        <TextView
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/information_payment_method" />
+
+        <TextView
+            android:id="@+id/item_receipt_tvPayment"
+            style="@style/TextStyleItemReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/5/2022  15h 26min" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_receipt_qrCode"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp200"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp5"
+        android:paddingHorizontal="@dimen/dp20"
+        android:paddingVertical="@dimen/dp5" />
+
+    <ImageView
+        style="@style/line"
+        android:layout_marginTop="@dimen/dp20" />
+</LinearLayout>
